@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>toDesktop</title>
+
+    <!-- Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+  </head>
+  <body>
+    <!-- Desktop Menu start-->
+    <nav class="p-3 flex bg-white justify-between items-center">
+      <a href="#" id="brand" class="flex items-center gap-2">
+        <img
+          class="object-cover max-w-12 max-h-12"
+          src="./assets/images/Logo/logo.png"
+          alt="logo"
+        />
+        <span class="text-lg font-medium font-display">ToDesktop</span>
+      </a>
+      <!-- NavMenu start-->
+      <div id="nav-menu" class="lg:flex gap-12 hidden">
+        <a href="#" class="font-medium font-body hover:text-primary">Home</a>
+        <a href="#" class="font-medium font-body hover:text-primary">Docs</a>
+        <a href="#" class="font-medium font-body hover:text-primary"
+          >ChangeLog</a
+        >
+        <a href="#" class="font-medium font-body hover:text-primary">Blogs</a>
+      </div>
+      <!-- menu Button -->
+      <button
+        class="hidden lg:flex md:gap-2 md:items-center border border-gray-200 px-6 py-2 rounded-lg hover:border-gray-600"
+      >
+        <img src="./assets/images/Logo/Electron Logo.svg" alt="icon" />
+        <span>Electron Developers</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <!-- Desktop Menu End-->
+
+      <!-- Mobile Menu Start -->
+      <!-- ***** nav Open icon start***** -->
+      <button class="p-2 lg:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-bars text-gray-600"></i>
+      </button>
+      <!-- ***** nav Open icon end ***** -->
+      <!-- ***** nav Menu ***** -->
+      <div
+        id="nav-dialog"
+        class="hidden fixed z-10 md:hidden bg-white inset-0 p-3"
+      >
+        <div id="nav-bar" class="flex justify-between">
+          <!-- ///Logo -->
+          <a href="#" id="brand" class="flex items-center gap-2">
+            <img
+              class="object-cover max-w-12 max-h-12"
+              src="./assets/images/Logo/logo.png"
+              alt="logo"
+            />
+            <span class="text-lg font-medium font-display">ToDesktop</span>
+          </a>
+          <!-- ///Navbar Close Start -->
+          <button class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-xmark text-gray-600"></i>
+          </button>
+        </div>
+        <!-- ///Menu -->
+        <div class="mt-6">
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Changelog</a
+          >
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Login</a
+          >
+        </div>
+        <!-- ///manu Button -->
+        <div class="h-[1px] bg-gray-200"></div>
+        <button
+          class="mt-6 flex gap-2 items-center border border-gray-200 px-6 py-4 rounded-lg hover:border-gray-600 hover:bg-gray-100"
+        >
+          <img src="./assets/images/Logo/Electron Logo.svg" alt="icon" />
+          <span>Electron Developers</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <!-- ***** nav Menu End ***** -->
+      <!-- Mobile Menu End -->
+    </nav>
+    <!-- Nav End -->
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
