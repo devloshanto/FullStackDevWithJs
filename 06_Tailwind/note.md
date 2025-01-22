@@ -4,7 +4,7 @@
 
 ## Install Tailwind In HTML
 
-- https://tailwindcss.com/docs/installation
+- <https://tailwindcss.com/docs/installation>
 - Tailwind CLI
 - Config `tailwind.config.js` file & Update `content: ["./index.html"],`
 - Run :- `$ npx tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css --watch`
@@ -13,6 +13,17 @@
 
 - `tailwind.config.js`
 - add Custom code in Extend
+
+### Add css in in body
+
+- style.css
+
+```css
+@layer base {
+body {
+  @apply font-body;
+}}
+```
 
 ### add Color
 
@@ -142,4 +153,16 @@ function handleMenu() {
 }
 ```
 
-https://youtu.be/mGN9-FPsX9o?si=C2BCjI3-cNPhGlkm
+<https://youtu.be/mGN9-FPsX9o?si=C2BCjI3-cNPhGlkm>
+
+## Some Class
+
+- `leading`
+- `sm : md : xl :`
+- `min-h-screen`
+- `bg-gradient-to-b from-purple-50 via-orange-50`
+- `(-) Nagative Value` -> `পজেটিভ ভ্যেল্যু` দিলে সামনে আসবে `নেগেটিভ ভ্যেল্যু` দিলে পিচনে আসবে।
+- `translate-y-2` -> উপর থেকে নিচে নামে
+- `-scale-x-100` -> এলিমেন্ট এঙ্গেল ফ্লিপ করতে সাহাজ্য করে
+- `text[16px]` -> [] এর মধ্যে কাস্টম ভ্যেলু পাচ করা যায়।
+- `border-b border-black border-opacity-30`

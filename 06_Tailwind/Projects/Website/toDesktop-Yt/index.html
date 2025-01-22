@@ -15,10 +15,10 @@
     />
     <link rel="stylesheet" href="./assets/css/output.css" />
   </head>
-  <body>
-    <!-- Desktop Menu start-->
+  <body class="">
+    <!-- Menu Start-->
     <nav class="p-3 flex bg-white justify-between items-center">
-      <a href="#" id="brand" class="flex items-center gap-2">
+      <a href="#" id="brand" class="flex items-center gap-2 flex-1">
         <img
           class="object-cover max-w-12 max-h-12"
           src="./assets/images/Logo/logo.png"
@@ -27,7 +27,7 @@
         <span class="text-lg font-medium font-display">ToDesktop</span>
       </a>
       <!-- NavMenu start-->
-      <div id="nav-menu" class="lg:flex gap-12 hidden">
+      <div id="nav-menu" class="lg:flex gap-12 hidden flex-1">
         <a href="#" class="font-medium font-body hover:text-primary">Home</a>
         <a href="#" class="font-medium font-body hover:text-primary">Docs</a>
         <a href="#" class="font-medium font-body hover:text-primary"
@@ -36,13 +36,15 @@
         <a href="#" class="font-medium font-body hover:text-primary">Blogs</a>
       </div>
       <!-- menu Button -->
-      <button
-        class="hidden lg:flex md:gap-2 md:items-center border border-gray-200 px-6 py-2 rounded-lg hover:border-gray-600"
+<div class="hidden lg:flex flex-1 justify-end ">
+        <button
+        class=" flex md:gap-2 md:items-center border border-gray-200 px-6 py-2 rounded-lg hover:border-gray-600"
       >
         <img src="./assets/images/Logo/Electron Logo.svg" alt="icon" />
         <span>Electron Developers</span>
         <i class="fa-solid fa-arrow-right"></i>
       </button>
+</div>
       <!-- Desktop Menu End-->
 
       <!-- Mobile Menu Start -->
@@ -112,8 +114,365 @@
       <!-- ***** nav Menu End ***** -->
       <!-- Mobile Menu End -->
     </nav>
-    <!-- Nav End -->
+    <!-- Menu End -->
+    <main>
+      <!-- HERO SECTION START -->
+      <div
+        id="hero"
+        class=" bg-gradient-to-b from-purple-50 via-orange-50 to-transparent"
+      >
+        <div
+          id="hero-container "
+          class="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col sm:items-center sm:text-center sm:pt-12">
 
+          <div id="version-text" class="flex items-center my-6 gap-2 border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:cursor-pointer hover:-translate-y-1 transition duration-200 group">
+
+            <div class="w-2 h-2 bg-yellow-400 border rounded-full border-yellow-600"></div>
+            <p class="font-display font-medium text-yellow-600"> v0.21.1:
+              <span class="text-yellow-800"> Find-in-page bug fixes</span></p>
+            <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-200"></i>
+
+          </div>
+
+          <!--  -->
+          <div id="hero-features" class="hidden sm:flex gap-8 my-6">
+            <div class="flex justify-center gap-2 items-center text-gray-500">
+              <i class="fa-regular fa-file-code text-sm"></i>
+              <p>Code Optional</p>
+            </div>
+            <div class="flex justify-center gap-2 items-center text-gray-500">
+              <i class="fa-regular fa-hand-back-fist text-sm"></i>
+              <p>Code Optional</p>
+            </div>
+            <div class="flex justify-center gap-2 items-center text-gray-500">
+              <i class="fa-regular fa-laptop text-sm"></i>
+              <p>Code Optional</p>
+            </div>
+          </div>
+          <!--  -->
+
+          <h1 class="font-semibold leading-snug text-4xl sm:text-7xl sm:leading-normal">Web app to desktop app in minutes</h1>
+          <p class="text-xl mt-4 sm:text-2xl sm:mt-8 text-gray-800">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
+          <div id="buttons-container" class="mt-12 flex flex-col sm:flex-row gap-5">
+            <button class="px-8 py-3 font-semibold rounded-lg bg-primary text-white shadow-sm hover:bg-opacity-90  transition delay-200 ">Download Now</button>
+            <button class="px-8 py-3 font-semibold rounded-lg bg-white border text-gary-800 border-gray-400 shadow-sm hover:border-gray-800 transition delay-150 ">Read Docs</button>
+          </div>
+        </div>
+      </div>
+      <!-- HERO sECTION END -->
+      <!-- Slider SECTION START -->
+        <div id="companies-container" class="">
+          <div id="companies-title" class="flex justify-center gap-2 mb-12">
+            <img class="translate-y-2" src="./assets/images/Companies-Image/arrow-down.png" alt="">
+            <span class="font-medium">Apps Powered by todesktop</span>
+            <img class="translate-y-2 -scale-x-100" src="./assets/images/Companies-Image/arrow-down.png" alt="">
+          </div>
+          <!--  -->
+          <div id="comanies-lines-group" class="flex flex-col gap-10 overflow-x-hidden">
+            <div id="line1" class="flex gap-4 w-screen -translate-x-48 transition-transform ease-linear">
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+            </div>
+            <div id="line2" class="flex gap-4 w-screen -translate-x-36 transition-transform ease-linear">
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+            </div>
+            <div id="line3" class="flex md:hidden gap-4 w-screen -translate-x-48 transition-transform ease-linear">
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+              <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                <img src="./assets/images/Companies-Image/i1.png " alt="logo" class="w-12 h-12 md:w-16 md:h-16">
+                <span class="text-[12px] md:text[16px] font-semibold">Unbounce</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Slider SECTION End -->
+       <!-- How it works Start -->
+        <div class="work py-12 px-6 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32" id="work">
+          <h2 class="text-5xl sm:font-semibold mb-14">How it works</h2>
+          <div id="setp1" class="rounded-xl mb-5 border py-12 px-8 flex lg:justify-between lg:items-center flex-col lg:flex-row">
+            <div class="contentArea flex flex-col gap-6 lg:w-1/2">
+              <span class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step 1</span>
+              <h3 class="text-4xl">Bootstrap straight from your web app</h3>
+              <p class="text-lg font-light">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</p>
+              <ul class="grid grid-cols-2 gap-4">
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+              </ul>
+            </div>
+            <div class="imageArea pt-12">
+              <img src="./assets/images/Work/step.png" alt="" class="md:w-3/4 md:h-3/4  md:object-center mx-auto">
+            </div>
+          </div>
+          <div id="setp2" class="rounded-xl mb-5 border py-12 px-8 flex lg:justify-between lg:items-center flex-col lg:flex-row">
+            <div class="contentArea flex flex-col gap-6 lg:w-1/2">
+              <span class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step 2</span>
+              <h3 class="text-4xl">Bootstrap straight from your web app</h3>
+              <p class="text-lg font-light">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</p>
+              <ul class="grid grid-cols-2 gap-4">
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+              </ul>
+            </div>
+            <div class="imageArea pt-12">
+              <img src="./assets/images/Work/step.png" alt="" class="md:w-3/4 md:h-3/4  md:object-center mx-auto">
+            </div>
+          </div>
+          <div id="setp3" class="rounded-xl mb-5 border py-12 px-8 flex lg:justify-between lg:items-center flex-col lg:flex-row">
+            <div class="contentArea flex flex-col gap-6 lg:w-1/2">
+              <span class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step 3</span>
+              <h3 class="text-4xl">Bootstrap straight from your web app</h3>
+              <p class="text-lg font-light">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</p>
+              <ul class="grid grid-cols-2 gap-4">
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+              </ul>
+            </div>
+            <div class="imageArea pt-12">
+              <img src="./assets/images/Work/step.png" alt="" class="md:w-3/4 md:h-3/4  md:object-center mx-auto">
+            </div>
+          </div>
+          <div id="setp4" class="rounded-xl  border py-12 px-8 flex lg:justify-between lg:items-center flex-col lg:flex-row">
+            <div class="contentArea flex flex-col gap-6 lg:w-1/2">
+              <span class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step 4</span>
+              <h3 class="text-4xl">Bootstrap straight from your web app</h3>
+              <p class="text-lg font-light">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</p>
+              <ul class="grid grid-cols-2 gap-4">
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+                <li class="flex gap-4 items-center">
+                  <i class="fa-solid fa-check text-gray-500"></i>
+                  <a href="#" class="text-lg font-light  border-b border-black border-opacity-30 hover:border-opacity-80">Multiple Windows</a>
+                </li>
+              </ul>
+            </div>
+            <div class="imageArea pt-12">
+              <img src="./assets/images/Work/step.png" alt="" class="md:w-3/4 md:h-3/4  md:object-center mx-auto">
+            </div>
+          </div>
+        </div>
+       <!-- How it works End -->
+    </main>
+<div class="h-[1000px]"></div>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

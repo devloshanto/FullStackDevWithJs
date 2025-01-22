@@ -1,0 +1,55 @@
+/* Import FOnts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+/* -------------------------- */
+
+#page1 {
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(86, 181, 213);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page3 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(23, 188, 244);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: crimson;
+}
