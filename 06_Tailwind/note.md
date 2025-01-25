@@ -25,6 +25,8 @@ body {
 }}
 ```
 
+- ক্লাস সিলেক্ট করে এর মদ্যে Tailwind এর ক্লাস গুলো দেওয়া যাবে। `.class{ @apply Tailwindcss }`
+
 ### add Color
 
 ```js
@@ -166,3 +168,5 @@ function handleMenu() {
 - `-scale-x-100` -> এলিমেন্ট এঙ্গেল ফ্লিপ করতে সাহাজ্য করে
 - `text[16px]` -> [] এর মধ্যে কাস্টম ভ্যেলু পাচ করা যায়।
 - `border-b border-black border-opacity-30`
+- `group ***`
+  - Main Container Group করে এর মদ্যের গুলোতে Hover Effect বা etc effect দেওউয়া যায়

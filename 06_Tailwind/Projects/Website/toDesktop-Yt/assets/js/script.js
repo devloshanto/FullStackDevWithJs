@@ -37,8 +37,10 @@ function setupInterSectionObserver(element,isLTR,spped){
 const line1= document.getElementById("line1")
 const line2= document.getElementById("line2")
 const line3= document.getElementById("line3")
+const line4= document.getElementById("line4")
 
 setupInterSectionObserver(line1,true,0.15);
 setupInterSectionObserver(line2,false,0.15);
 setupInterSectionObserver(line3,true,0.15);
+setupInterSectionObserver(line4,true,0.50);
 
