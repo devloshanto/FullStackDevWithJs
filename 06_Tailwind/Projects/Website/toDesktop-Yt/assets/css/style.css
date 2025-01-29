@@ -5,17 +5,31 @@
 
 /* Defult Font In Body */
 @layer base {
-  html,body{
+  html,
+  body {
     overflow-x: hidden;
   }
   body {
     @apply font-body;
   }
-  h1,h2,h3{
+  h1,
+  h2,
+  h3 {
     @apply font-display text-gray-800 font-medium;
   }
 
-  .container{
-    @apply py-12 px-6 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32;
+  .container {
+    @apply py-12 px-6 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-10;
+  }
+
+  .anchor-hover {
+    @apply border-b border-dotted border-y-gray-300 hover:border-solid hover:cursor-pointer hover:border-gray-500;
+  }
+
+  .gradient-hover-outer {
+    @apply p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200 rounded-xl;
+  }
+  .gradient-hover-inner {
+    @apply bg-slate-50 group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 hover:to-yellow-50 rounded-xl;
   }
 }
