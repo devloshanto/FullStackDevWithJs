@@ -5,14 +5,24 @@
 ## Install Tailwind In HTML
 
 - <https://tailwindcss.com/docs/installation>
+
+```css
 - Tailwind CLI
 - Config `tailwind.config.js` file & Update `content: ["./index.html"],`
 - Run :- `$ npx tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css --watch`
+```
+
+- Tailwind CLI
+- Create 1) Style.css & 2) Output.css
+-
+- Run :- `npx @tailwindcss/cli -i ./assets/css/style.css -o ./assets/css/output.css --watch`
 
 ## Add Defult Style
 
 - `tailwind.config.js`
 - add Custom code in Extend
+
+[Custom Css In Theme](https://tailwindcss.com/docs/adding-custom-styles#customizing-your-theme)
 
 ### Add css in in body
 
@@ -20,9 +30,10 @@
 
 ```css
 @layer base {
-body {
-  @apply font-body;
-}}
+  body {
+    @apply font-body;
+  }
+}
 ```
 
 - ক্লাস সিলেক্ট করে এর মদ্যে Tailwind এর ক্লাস গুলো দেওয়া যাবে। `.class{ @apply Tailwindcss }`

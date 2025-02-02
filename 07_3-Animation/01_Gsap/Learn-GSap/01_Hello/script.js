@@ -64,7 +64,7 @@ gsap.from("#box2", {
 
 // 🧿 YOYO
 
-gsap.to("#box4", {
+/* gsap.to("#box4", {
   x: 500,
   duration: 3,
   delay: 1,
@@ -73,4 +73,4 @@ gsap.to("#box4", {
   yoyo: true,
   borderRadius: 50,
   rotate: 180,
-});
+}); */
